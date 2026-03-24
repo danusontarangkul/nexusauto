@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Nexus Auto</title>
+    <meta
+      name="description"
+      content="How to use Nexus Auto, privacy policy, and terms of service."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icon.png" type="image/png" />
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --primary-deep: #2563eb;
+        --bg: #121212;
+        --surface: #1a1a1a;
+        --surface-raised: #242424;
+        --border: #4a4848;
+        --text: #f8fafc;
+        --text-muted: #e4e7eb;
+        --text-soft: #b0b0b0;
+        --radius: 16px;
+        --radius-sm: 12px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Source Sans Pro", system-ui, sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        color: var(--text);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .top a.home {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .top a.home:hover {
+        color: var(--primary);
+      }
+
+      .top img {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+      }
+
+      nav.toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1rem 1.25rem;
+        margin-bottom: 2.5rem;
+      }
+
+      nav.toc strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--text-soft);
+      }
+
+      nav.toc ul {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      nav.toc li {
+        margin: 0.35rem 0;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 2.25rem 0 0.75rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border);
+      }
+
+      h2:first-of-type {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      h3 {
+        margin: 1.25rem 0 0.5rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--text-muted);
+      }
+
+      ul,
+      ol {
+        margin: 0 0 1rem;
+        padding-left: 1.35rem;
+        color: var(--text-muted);
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      .note {
+        font-size: 0.9rem;
+        color: var(--text-soft);
+        border-left: 3px solid var(--primary);
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+      }
+
+      .legal {
+        font-size: 0.95rem;
+      }
+
+      .legal h2 {
+        scroll-margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <a class="home" href="index.html">
+          <img src="../assets/icon.png" alt="" width="44" height="44" />
+          Nexus Auto
+        </a>
+        <a href="index.html">← Back to home</a>
+      </div>
+
+      <h1>Support</h1>
+      <p style="color: var(--text-soft); margin-bottom: 1.5rem">
+        Help using the app, plus our privacy policy and terms of service.
+      </p>
+
+      <nav class="toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <ul>
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+
+      <section id="documentation" aria-labelledby="doc-heading">
+        <h2 id="doc-heading">Documentation</h2>
+
+        <h3>Getting started</h3>
+        <ol>
+          <li>
+            <strong style="color: var(--text)">Sign in.</strong> Open Nexus Auto
+            and sign in with your Google or Apple account.
+          </li>
+          <li>
+            <strong style="color: var(--text)">Add your vehicle.</strong> Follow
+            onboarding to enter your vehicle—use the VIN scanner, upload a photo
+            of the VIN, type the VIN manually, or enter details manually when
+            needed. Confirm your vehicle when everything looks correct.
+          </li>
+          <li>
+            <strong style="color: var(--text)">Explore the app.</strong> Use the
+            bottom tabs to move between Dashboard, Records, Warranties, and
+            About.
+          </li>
+        </ol>
+
+        <h3>Dashboard</h3>
+        <p>
+          The dashboard is your home for the current vehicle: quick access to
+          maintenance context, registration and insurance, and your account.
+          Open registration or insurance from here when you need to review or
+          update those details. Service record entries opened from the dashboard
+          return you to your records flow as you navigate.
+        </p>
+
+        <h3>Records</h3>
+        <p>
+          The Records tab lists your service history. Add a new record to log
+          work performed, dates, mileage, and related notes. Open any record to
+          see full details. You can start adding a record with an optional link
+          to a maintenance item when the app suggests it.
+        </p>
+
+        <h3>Warranties</h3>
+        <p>
+          Use Warranties to add and review coverage: see what is protected,
+          important dates, and details in one place. Add new warranties as you
+          purchase or renew coverage, and open an entry for specifics.
+        </p>
+
+        <h3>About</h3>
+        <p>
+          The About section provides app information and related links. Use it
+          for version details and anything we surface about Nexus Auto on
+          device.
+        </p>
+
+        <h3>Camera and photos</h3>
+        <p>
+          Nexus Auto may use the camera to scan VINs and capture maintenance
+          documents, and may access your photo library when you import existing
+          images. Grant permissions when prompted so these features work as
+          intended.
+        </p>
+
+        <p class="note">
+          Screens and exact labels may change slightly as we improve the app. If
+          something does not match what you see on your device, use the latest
+          version from the App Store and check release notes when available.
+        </p>
+      </section>
+
+      <section id="privacy" class="legal" aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Privacy Policy</h2>
+        <p><em>Last updated: March 24, 2026</em></p>
+        <p>
+          This Privacy Policy describes how Nexus Auto (“we,” “us,” or “our”)
+          handles information when you use our mobile application (the “App”).
+          By using the App, you agree to this policy.
+        </p>
+
+        <h3>Information we collect</h3>
+        <ul>
+          <li>
+            <strong style="color: var(--text)">Account information.</strong>
+            When you sign in with Google or Apple, we receive identifiers and
+            profile details those providers share with us according to your
+            settings and their policies.
+          </li>
+          <li>
+            <strong style="color: var(--text)"
+              >Vehicle and maintenance data.</strong
+            >
+            Information you enter or import—such as VIN, plate, service records,
+            warranties, registration, and insurance details—may be stored to
+            provide App features.
+          </li>
+          <li>
+            <strong style="color: var(--text)">Content you capture.</strong>
+            Images from the camera or photo library that you choose to use with
+            the App (for example, VIN or receipt photos) are processed as needed
+            for the features you use.
+          </li>
+          <li>
+            <strong style="color: var(--text)">Technical data.</strong> We may
+            collect device and diagnostic information (such as app version and
+            crash data) as permitted by your device settings, to operate and
+            improve the App.
+          </li>
+        </ul>
+
+        <h3>How we use information</h3>
+        <p>
+          We use the information above to provide, maintain, and improve the
+          App; authenticate you; sync your data across devices where supported;
+          communicate with you about the service when appropriate; and comply
+          with law.
+        </p>
+
+        <h3>Sharing</h3>
+        <p>
+          We may share information with service providers who help us host data,
+          authenticate users, process subscriptions or payments where
+          applicable, and analyze reliability and usage—only as needed for those
+          purposes. We may disclose information if required by law or to protect
+          rights and safety.
+        </p>
+
+        <h3>Retention</h3>
+        <p>
+          We retain information as long as your account is active or as needed
+          to provide the App, unless a longer period is required or permitted by
+          law.
+        </p>
+
+        <h3>Your choices</h3>
+        <p>
+          You can review and update certain information in the App. You may
+          revoke camera or photo access in your device settings, though some
+          features may not work without them. You may request account or data
+          deletion subject to our legal and operational constraints—contact us
+          using the method we provide in the App or store listing.
+        </p>
+
+        <h3>Children</h3>
+        <p>
+          The App is not directed at children under 13 (or the age required by
+          your region), and we do not knowingly collect their personal
+          information.
+        </p>
+
+        <h3>Changes</h3>
+        <p>
+          We may update this Privacy Policy from time to time. We will post the
+          updated policy in the App or on this page and adjust the “Last
+          updated” date.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          For privacy-related requests, use the contact information listed with
+          the App in the App Store or the contact method we publish for Nexus
+          Auto.
+        </p>
+      </section>
+
+      <section id="terms" class="legal" aria-labelledby="terms-heading">
+        <h2 id="terms-heading">Terms of Service</h2>
+        <p><em>Last updated: March 24, 2026</em></p>
+        <p>
+          These Terms of Service (“Terms”) govern your use of the Nexus Auto
+          mobile application (the “App”). By downloading, accessing, or using
+          the App, you agree to these Terms.
+        </p>
+
+        <h3>Eligibility and account</h3>
+        <p>
+          You must be able to form a binding contract in your jurisdiction to
+          use the App. You are responsible for activity under your account and
+          for maintaining the security of your sign-in method.
+        </p>
+
+        <h3>License</h3>
+        <p>
+          We grant you a limited, non-exclusive, non-transferable, revocable
+          license to use the App for your personal, non-commercial vehicle
+          maintenance and documentation purposes, subject to these Terms and the
+          rules of the app store from which you obtained the App.
+        </p>
+
+        <h3>Your content</h3>
+        <p>
+          You retain rights to content you submit. You grant us the rights
+          necessary to host, process, back up, and display your content to
+          operate the App. You represent that you have the rights to provide
+          that content and that it does not violate applicable law or
+          third-party rights.
+        </p>
+
+        <h3>Acceptable use</h3>
+        <p>
+          You agree not to misuse the App—for example, by attempting to access
+          our systems or other users' data without authorization, reverse
+          engineering except where permitted by law, or using the App in
+          violation of law. We may suspend or terminate access for violations.
+        </p>
+
+        <h3>Disclaimers</h3>
+        <p>
+          The App is provided “as is” and “as available.” We do not guarantee
+          that the App will be error-free, uninterrupted, or fit for a
+          particular purpose. Maintenance reminders, records, and documents in
+          the App are for your convenience and do not replace professional
+          mechanical advice, manufacturer guidance, or legal or insurance
+          advice.
+        </p>
+
+        <h3>Limitation of liability</h3>
+        <p>
+          To the maximum extent permitted by law, we and our suppliers are not
+          liable for indirect, incidental, special, consequential, or punitive
+          damages, or for loss of profits, data, or goodwill. Our total
+          liability for any claim relating to the App is limited to the greater
+          of amounts you paid us for the App in the twelve months before the
+          claim or twenty-five U.S. dollars, unless applicable law requires
+          otherwise.
+        </p>
+
+        <h3>Indemnity</h3>
+        <p>
+          You agree to indemnify and hold us harmless from claims arising out of
+          your use of the App, your content, or your violation of these Terms,
+          to the extent permitted by law.
+        </p>
+
+        <h3>Third-party services</h3>
+        <p>
+          The App may rely on third parties (such as sign-in providers, cloud
+          backends, or analytics). Their terms and privacy policies may apply in
+          addition to ours.
+        </p>
+
+        <h3>Changes to the App and Terms</h3>
+        <p>
+          We may modify or discontinue features of the App. We may update these
+          Terms; continued use after notice constitutes acceptance where
+          permitted by law.
+        </p>
+
+        <h3>Governing law</h3>
+        <p>
+          These Terms are governed by the laws applicable in your primary place
+          of residence or as required by the app store or mandatory consumer
+          protection rules in your region, without regard to conflict-of-law
+          principles, except where prohibited.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          For questions about these Terms, you may email
+          <a href="mailto:anusontarangkul.d@gmail.com"
+            >anusontarangkul.d@gmail.com</a
+          >.
+        </p>
+      </section>
+
+      <p style="margin-top: 2.5rem">
+        <a href="index.html">← Back to home</a>
+      </p>
+    </div>
+  </body>
+</html>

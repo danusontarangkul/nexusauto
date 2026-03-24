@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nexus Auto — Vehicle maintenance, organized</title>
+    <meta
+      name="description"
+      content="Track service records, warranties, registration, and insurance for your vehicles in one place."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/icon.png" type="image/png" />
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --primary-deep: #2563eb;
+        --bg: #121212;
+        --surface: #1a1a1a;
+        --surface-raised: #242424;
+        --border: #4a4848;
+        --text: #f8fafc;
+        --text-muted: #e4e7eb;
+        --text-soft: #b0b0b0;
+        --radius: 16px;
+        --radius-sm: 12px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Source Sans Pro", system-ui, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .brand img {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+      }
+
+      .brand h1 {
+        margin: 0;
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .brand span {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: var(--text-soft);
+      }
+
+      .hero {
+        padding: 3rem 0 2rem;
+      }
+
+      .hero h2 {
+        margin: 0 0 1rem;
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+      }
+
+      .hero p.lead {
+        margin: 0 0 1.75rem;
+        font-size: 1.15rem;
+        color: var(--text-muted);
+        max-width: 36rem;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.65rem 1.25rem;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: var(--radius-sm);
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition:
+          background 0.15s ease,
+          border-color 0.15s ease;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: var(--text);
+      }
+
+      .btn-primary:hover {
+        background: var(--primary-deep);
+        text-decoration: none;
+      }
+
+      .btn-ghost {
+        background: transparent;
+        color: var(--text-muted);
+        border-color: var(--border);
+      }
+
+      .btn-ghost:hover {
+        background: var(--surface-raised);
+        text-decoration: none;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.35rem 1.25rem;
+      }
+
+      .card h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--text-soft);
+      }
+
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.9rem;
+        color: var(--text-soft);
+      }
+
+      footer a {
+        color: var(--text-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <img
+            src="./assets/icon.png"
+            alt="Nexus Auto logo"
+            width="56"
+            height="56"
+          />
+          <div>
+            <h1>Nexus Auto</h1>
+            <span>Maintenance &amp; documents in one place</span>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="support.html">Support &amp; docs</a>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-heading">
+        <h2 id="hero-heading">Your car's history, clear and current</h2>
+        <p class="lead">
+          Log service records, manage warranties, and keep registration and
+          insurance details handy—built for drivers who want less clutter and
+          fewer surprises.
+        </p>
+      </section>
+
+      <section class="features" aria-label="Features">
+        <article class="card">
+          <h3>Service records</h3>
+          <p>
+            Add and review maintenance history so you always know what was done
+            and when.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Warranties</h3>
+          <p>
+            Track coverage and key dates so claims and renewals are easier to
+            handle.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Vehicle &amp; docs</h3>
+          <p>
+            Onboarding with VIN entry or scan, plus registration and insurance
+            in reach from the dashboard.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <p>
+          Questions? See
+          <a href="support.html">Support &amp; documentation</a>
+          ·
+          <a href="support.html#privacy">Privacy Policy</a>
+          ·
+          <a href="support.html#terms">Terms of Service</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
