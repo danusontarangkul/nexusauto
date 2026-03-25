@@ -12,7 +12,7 @@ Static marketing pages for **Nexus Auto**, a product concept focused on organizi
 | -------------- | ------------------------------------------------------------------------------------ |
 | `index.html`   | Landing page with hero, feature highlights, and links to support.                    |
 | `support.html` | Support content, documentation-style guidance, Privacy Policy, and Terms of Service. |
-| `assets/`      | `icon.png` (header / favicon), `screenshot.png` (README preview).                    |
+| `assets/`      | `icon.png` (header), `favicon.png` (tab icon), `screenshot.png` (README preview).    |
 
 There is no build step or package manager: open the HTML files in a browser or serve the folder with any static file server.
 
